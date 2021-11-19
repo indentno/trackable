@@ -1,0 +1,33 @@
+{
+    "name": "s360digital/trackable",
+    "version": "1.0.0",
+    "description": "Blade directive for do not track header",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ecrmnn",
+            "email": "danieleckermann@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "S360Digital\\Trackable\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "S360Digital\\Trackable\\TrackableServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.23",
+        "friendsofphp/php-cs-fixer": "^3.3"
+    }
+}
