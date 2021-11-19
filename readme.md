@@ -23,7 +23,7 @@ composer require s360digital/trackable
 ```
 
 #### Global functions
-```blade
+```php
 if (trackable()) {
     // User is trackable
 }
