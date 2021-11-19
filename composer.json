@@ -1,6 +1,6 @@
 {
     "name": "s360digital/trackable",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Blade directive for do not track header",
     "type": "library",
     "license": "MIT",
