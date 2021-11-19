@@ -13,23 +13,22 @@ composer require s360digital/trackable
 #### Blade directives
 ```blade
 @trackable
-  The user allows tracking.
+  User allows tracking.
   Put Google Tag Manager and other tracking scripts here.
 @endtrackable
 
 @untrackable
-  The user have enabled "do not track" it their browser
+  User have enabled "do not track" it their browser
 @enduntrackable
 ```
 
 #### Global functions
 ```blade
-@trackable
-  The user allows tracking.
-  Put Google Tag Manager and other tracking scripts here.
-@endtrackable
+if (trackable()) {
+    // User is trackable
+}
 
-@untrackable
-  The user have enabled "do not track" it their browser
-@enduntrackable
+if (untrackable()) {
+    // User have enabled "do not track" it their browser
+}
 ```
