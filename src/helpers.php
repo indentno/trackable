@@ -3,7 +3,11 @@
 if (!function_exists('untrackable')) {
     function untrackable()
     {
-        return (bool) $_SERVER['HTTP_DNT'] ?? true;
+        if (isset($_SERVER['HTTP_DNT'])) {
+            return (bool) $_SERVER['HTTP_DNT'] ?? true;
+        }
+
+        return false;
     }
 }
 
