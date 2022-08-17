@@ -1,6 +1,6 @@
 <?php
 
-namespace S360Digital\Trackable;
+namespace Indent\Trackable;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
