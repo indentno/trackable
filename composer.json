@@ -1,6 +1,6 @@
 {
-    "name": "s360digital/trackable",
-    "version": "1.0.3",
+    "name": "indentno/trackable",
+    "version": "1.0.4",
     "description": "Blade directive for do not track header",
     "type": "library",
     "license": "MIT",
@@ -13,7 +13,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "S360Digital\\Trackable\\": "src/"
+            "Indent\\Trackable\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "S360Digital\\Trackable\\TrackableServiceProvider"
+                "Indent\\Trackable\\TrackableServiceProvider"
             ]
         }
     },
